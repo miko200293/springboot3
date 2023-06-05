@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.miko.boot3.ssm.mapper.UserMapper">
+  <!--接口的全类名得和namespace的值是一一对应的即可-->
+
+    <select id="getUserById" resultType="com.miko.boot3.ssm.bean.TUser">
+        select * from t_user where  id=#{id}
+    </select>
+</mapper>
